@@ -23,35 +23,35 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x75B4
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    jejunee
+#define MANUFACTURER    Solex
 #define PRODUCT         ub65
-#define DESCRIPTION     65% keeb
+#define DESCRIPTION     65% keyboard
 
 /* key matrix size */
 #define MATRIX_ROWS 10
 #define MATRIX_COLS 7
 
 /* key matrix pins */
-#define MATRIX_ROW_PINS { F5, F6, F7, C7, C6, F0, D7, D6, D4, D0}
-#define MATRIX_COL_PINS { F1, F4, B7, D1, D2, D3, D7 }
+#define MATRIX_ROW_PINS { F1, F4, F5, F6, F7, C7, C6, B5, D0, B7}
+#define MATRIX_COL_PINS { D4, D6, B0, D1, D2, D3, D5}
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION ROW2COL
 
 #define RGB_DI_PIN B6
-#define RGB_DISABLE_AFTER_TIMEOUT 0 // number of ticks to wait until disabling effects
+//#define RGB_DISABLE_AFTER_TIMEOUT 0 // number of ticks to wait until disabling effects
 #define RGB_DISABLE_WHEN_USB_SUSPENDED true // turn off effects when suspended
-#define RGB_MATRIX_KEYPRESSES
-#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+//#define RGB_MATRIX_KEYPRESSES
+//#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #define RGB_MATRIX_LED_PROCESS_LIMIT 4
-#define RGB_MATRIX_LED_FLUSH_LIMIT 26
+#define RGB_MATRIX_LED_FLUSH_LIMIT 32
 #define DRIVER_LED_TOTAL 10
-#define RGBLIGHT_LIMIT_VAL 180
+#define RGBLIGHT_LIMIT_VAL 130
 #define RGB_MATRIX_STARTUP_HUE 0 // Sets the default hue value, if none has been set
 #define RGB_MATRIX_STARTUP_SAT 255 // Sets the default saturation value, if none has been set
 #define RGB_MATRIX_STARTUP_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS // Sets the default brightness value, if none has been set
-#define RGB_MATRIX_STARTUP_SPD 127 // Sets the default animation speed, if none has been set
+#define RGB_MATRIX_STARTUP_SPD  // Sets the default animation speed, if none has been set
 #define RGBLIGHT_HUE_STEP 10
 #define RGBLIGHT_SAT_STEP 17
 #define RGBLIGHT_VAL_STEP 17
@@ -63,8 +63,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* define if matrix has ghost (lacks anti-ghosting diodes) */
 //#define MATRIX_HAS_GHOST
 
-#define AdafruitBleResetPin B4
-#define AdafruitBleCSPin    B3
+#define AdafruitBleResetPin D7
+#define AdafruitBleCSPin    B4
 #define AdafruitBleIRQPin   E6
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
