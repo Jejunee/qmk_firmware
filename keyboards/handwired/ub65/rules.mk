@@ -1,11 +1,7 @@
 # MCU name
 MCU = atmega32u4
-<<<<<<< HEAD
 F_CPU = 8000000  #8MHz
 
-=======
-F_CPU = 8000000
->>>>>>> a9fa8a19bcae15cd10bf3f2afb4be4d2c2800162
 # Bootloader selection
 #   Teensy       halfkay
 #   Pro Micro    caterina
